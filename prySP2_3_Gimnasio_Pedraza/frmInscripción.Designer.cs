@@ -35,6 +35,7 @@
             lblEdad = new Label();
             lblNombre = new Label();
             groupBox2 = new GroupBox();
+            chkCasillero = new CheckBox();
             txtMeses = new TextBox();
             cboPlan = new ComboBox();
             cboTurno = new ComboBox();
@@ -47,7 +48,6 @@
             rbtEfectivo = new RadioButton();
             btnCalcular = new Button();
             btnLimpiar = new Button();
-            chkCasillero = new CheckBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
@@ -70,7 +70,7 @@
             // chkEstudiante
             // 
             chkEstudiante.AutoSize = true;
-            chkEstudiante.Location = new Point(10, 105);
+            chkEstudiante.Location = new Point(6, 101);
             chkEstudiante.Name = "chkEstudiante";
             chkEstudiante.Size = new Size(81, 19);
             chkEstudiante.TabIndex = 8;
@@ -82,7 +82,7 @@
             txtEdad.Location = new Point(66, 64);
             txtEdad.MaxLength = 3;
             txtEdad.Name = "txtEdad";
-            txtEdad.Size = new Size(130, 23);
+            txtEdad.Size = new Size(46, 23);
             txtEdad.TabIndex = 7;
             // 
             // txtNombre
@@ -125,6 +125,16 @@
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
             groupBox2.Text = "Plan";
+            // 
+            // chkCasillero
+            // 
+            chkCasillero.AutoSize = true;
+            chkCasillero.Location = new Point(15, 127);
+            chkCasillero.Name = "chkCasillero";
+            chkCasillero.Size = new Size(71, 19);
+            chkCasillero.TabIndex = 13;
+            chkCasillero.Text = "Casillero";
+            chkCasillero.UseVisualStyleBackColor = true;
             // 
             // txtMeses
             // 
@@ -225,31 +235,21 @@
             // 
             // btnCalcular
             // 
-            btnCalcular.Location = new Point(58, 497);
+            btnCalcular.Location = new Point(211, 497);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(95, 38);
+            btnCalcular.Size = new Size(92, 38);
             btnCalcular.TabIndex = 3;
             btnCalcular.Text = "Calcular";
             btnCalcular.UseVisualStyleBackColor = true;
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new Point(219, 497);
+            btnLimpiar.Location = new Point(309, 497);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(93, 38);
             btnLimpiar.TabIndex = 4;
             btnLimpiar.Text = "Limpiar";
             btnLimpiar.UseVisualStyleBackColor = true;
-            // 
-            // chkCasillero
-            // 
-            chkCasillero.AutoSize = true;
-            chkCasillero.Location = new Point(15, 127);
-            chkCasillero.Name = "chkCasillero";
-            chkCasillero.Size = new Size(71, 19);
-            chkCasillero.TabIndex = 13;
-            chkCasillero.Text = "Casillero";
-            chkCasillero.UseVisualStyleBackColor = true;
             // 
             // frmInscipción
             // 
@@ -266,6 +266,7 @@
             Name = "frmInscipción";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Gimnasio Siglo-Inscripción";
+            Load += frmInscipción_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
