@@ -24,7 +24,16 @@ namespace prySP2_3_Gimnasio_Pedraza
             rbtTarjeta.Enabled = false;
 
         }
-
+        private const decimal PRECIO_MUSCULACION = 15000m;
+        private const decimal PRECIO_FUNCIONAL = 18000m;
+        private const decimal PRECIO_NATACION = 22000m;
+        private const decimal PRECIO_CASILEERO = 300m;
+        private const int EDAD_MINIMA = 14;
+        private const decimal DESC_MENOR_18 = 0.25m;
+        private const decimal DESC_MAYOR_65 = 0.30m;
+        private const decimal DESC_ESTUDIANTE = 0.15m;
+        private const decimal RECARGO_3_COUTAS = 0.10m;
+        
 
 
         private void label3_Click(object sender, EventArgs e)

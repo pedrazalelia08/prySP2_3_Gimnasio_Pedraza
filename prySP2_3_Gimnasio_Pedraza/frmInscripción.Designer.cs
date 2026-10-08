@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInscipción));
             groupBox1 = new GroupBox();
             chkEstudiante = new CheckBox();
             txtEdad = new TextBox();
@@ -131,9 +132,9 @@
             chkCasillero.AutoSize = true;
             chkCasillero.Location = new Point(15, 127);
             chkCasillero.Name = "chkCasillero";
-            chkCasillero.Size = new Size(71, 19);
+            chkCasillero.Size = new Size(142, 19);
             chkCasillero.TabIndex = 13;
-            chkCasillero.Text = "Casillero";
+            chkCasillero.Text = "Casillero ($3.000/mes)";
             chkCasillero.UseVisualStyleBackColor = true;
             // 
             // txtMeses
@@ -141,7 +142,7 @@
             txtMeses.Location = new Point(57, 89);
             txtMeses.MaxLength = 2;
             txtMeses.Name = "txtMeses";
-            txtMeses.Size = new Size(55, 23);
+            txtMeses.Size = new Size(30, 23);
             txtMeses.TabIndex = 12;
             // 
             // cboPlan
@@ -199,7 +200,7 @@
             cboCuotas.FormattingEnabled = true;
             cboCuotas.Location = new Point(66, 77);
             cboCuotas.Name = "cboCuotas";
-            cboCuotas.Size = new Size(78, 23);
+            cboCuotas.Size = new Size(46, 23);
             cboCuotas.TabIndex = 10;
             // 
             // lblCuotas
@@ -262,6 +263,7 @@
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "frmInscipción";
             StartPosition = FormStartPosition.CenterScreen;
