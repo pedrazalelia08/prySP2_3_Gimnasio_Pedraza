@@ -36,6 +36,7 @@
             lblEdad = new Label();
             lblNombre = new Label();
             groupBox2 = new GroupBox();
+            label1 = new Label();
             chkCasillero = new CheckBox();
             txtMeses = new TextBox();
             cboPlan = new ComboBox();
@@ -68,7 +69,7 @@
             groupBox1.Margin = new Padding(4);
             groupBox1.Name = "groupBox1";
             groupBox1.Padding = new Padding(4);
-            groupBox1.Size = new Size(370, 170);
+            groupBox1.Size = new Size(316, 163);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Datos Personales";
@@ -79,7 +80,7 @@
             chkEstudiante.Location = new Point(10, 135);
             chkEstudiante.Margin = new Padding(4);
             chkEstudiante.Name = "chkEstudiante";
-            chkEstudiante.Size = new Size(133, 24);
+            chkEstudiante.Size = new Size(94, 21);
             chkEstudiante.TabIndex = 8;
             chkEstudiante.Text = "Estudiante";
             chkEstudiante.UseVisualStyleBackColor = true;
@@ -90,7 +91,7 @@
             txtEdad.Margin = new Padding(4);
             txtEdad.MaxLength = 3;
             txtEdad.Name = "txtEdad";
-            txtEdad.Size = new Size(70, 28);
+            txtEdad.Size = new Size(49, 23);
             txtEdad.TabIndex = 7;
             // 
             // txtNombre
@@ -99,7 +100,7 @@
             txtNombre.Margin = new Padding(4);
             txtNombre.MaxLength = 30;
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(202, 28);
+            txtNombre.Size = new Size(202, 23);
             txtNombre.TabIndex = 6;
             // 
             // lblEdad
@@ -108,7 +109,7 @@
             lblEdad.Location = new Point(10, 96);
             lblEdad.Margin = new Padding(4, 0, 4, 0);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new Size(57, 20);
+            lblEdad.Size = new Size(45, 17);
             lblEdad.TabIndex = 4;
             lblEdad.Text = "Edad:";
             // 
@@ -118,27 +119,36 @@
             lblNombre.Location = new Point(10, 47);
             lblNombre.Margin = new Padding(4, 0, 4, 0);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(82, 20);
+            lblNombre.Size = new Size(62, 17);
             lblNombre.TabIndex = 3;
             lblNombre.Text = "Nombre:";
             // 
             // groupBox2
             // 
             groupBox2.BackColor = Color.FromArgb(255, 224, 192);
+            groupBox2.Controls.Add(label1);
             groupBox2.Controls.Add(chkCasillero);
             groupBox2.Controls.Add(txtMeses);
             groupBox2.Controls.Add(cboPlan);
             groupBox2.Controls.Add(cboTurno);
             groupBox2.Controls.Add(lblMeses);
             groupBox2.Controls.Add(lblTurno);
-            groupBox2.Location = new Point(166, 228);
+            groupBox2.Location = new Point(27, 215);
             groupBox2.Margin = new Padding(4);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(4);
-            groupBox2.Size = new Size(367, 208);
+            groupBox2.Size = new Size(320, 199);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Plan";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(28, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(40, 17);
+            label1.TabIndex = 14;
+            label1.Text = "Plan:";
             // 
             // chkCasillero
             // 
@@ -146,7 +156,7 @@
             chkCasillero.Location = new Point(23, 169);
             chkCasillero.Margin = new Padding(4);
             chkCasillero.Name = "chkCasillero";
-            chkCasillero.Size = new Size(232, 24);
+            chkCasillero.Size = new Size(169, 21);
             chkCasillero.TabIndex = 13;
             chkCasillero.Text = "Casillero ($3.000/mes)";
             chkCasillero.UseVisualStyleBackColor = true;
@@ -157,18 +167,18 @@
             txtMeses.Margin = new Padding(4);
             txtMeses.MaxLength = 2;
             txtMeses.Name = "txtMeses";
-            txtMeses.Size = new Size(45, 28);
+            txtMeses.Size = new Size(45, 23);
             txtMeses.TabIndex = 12;
             // 
             // cboPlan
             // 
             cboPlan.DropDownStyle = ComboBoxStyle.DropDownList;
             cboPlan.FormattingEnabled = true;
-            cboPlan.Items.AddRange(new object[] { "Musculación", "", "Funcional", "", "Natación" });
-            cboPlan.Location = new Point(10, 29);
+            cboPlan.Items.AddRange(new object[] { "Musculación", "Funcional", "Natación" });
+            cboPlan.Location = new Point(89, 24);
             cboPlan.Margin = new Padding(4);
             cboPlan.Name = "cboPlan";
-            cboPlan.Size = new Size(192, 28);
+            cboPlan.Size = new Size(152, 25);
             cboPlan.TabIndex = 11;
             // 
             // cboTurno
@@ -176,10 +186,10 @@
             cboTurno.DropDownStyle = ComboBoxStyle.DropDownList;
             cboTurno.FormattingEnabled = true;
             cboTurno.Items.AddRange(new object[] { "Mañana ", "Tarde", "Noche" });
-            cboTurno.Location = new Point(91, 75);
+            cboTurno.Location = new Point(89, 71);
             cboTurno.Margin = new Padding(4);
             cboTurno.Name = "cboTurno";
-            cboTurno.Size = new Size(150, 28);
+            cboTurno.Size = new Size(150, 25);
             cboTurno.TabIndex = 10;
             // 
             // lblMeses
@@ -188,17 +198,17 @@
             lblMeses.Location = new Point(15, 129);
             lblMeses.Margin = new Padding(4, 0, 4, 0);
             lblMeses.Name = "lblMeses";
-            lblMeses.Size = new Size(67, 20);
+            lblMeses.Size = new Size(53, 17);
             lblMeses.TabIndex = 7;
             lblMeses.Text = "Meses:";
             // 
             // lblTurno
             // 
             lblTurno.AutoSize = true;
-            lblTurno.Location = new Point(15, 79);
+            lblTurno.Location = new Point(18, 74);
             lblTurno.Margin = new Padding(4, 0, 4, 0);
             lblTurno.Name = "lblTurno";
-            lblTurno.Size = new Size(70, 20);
+            lblTurno.Size = new Size(50, 17);
             lblTurno.TabIndex = 6;
             lblTurno.Text = "Turno:";
             // 
@@ -209,11 +219,11 @@
             groupBox3.Controls.Add(lblCuotas);
             groupBox3.Controls.Add(rbtTarjeta);
             groupBox3.Controls.Add(rbtEfectivo);
-            groupBox3.Location = new Point(27, 460);
+            groupBox3.Location = new Point(27, 437);
             groupBox3.Margin = new Padding(4);
             groupBox3.Name = "groupBox3";
             groupBox3.Padding = new Padding(4);
-            groupBox3.Size = new Size(378, 155);
+            groupBox3.Size = new Size(316, 153);
             groupBox3.TabIndex = 2;
             groupBox3.TabStop = false;
             groupBox3.Text = "Forma de Pago";
@@ -221,12 +231,13 @@
             // cboCuotas
             // 
             cboCuotas.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCuotas.Enabled = false;
             cboCuotas.FormattingEnabled = true;
             cboCuotas.Items.AddRange(new object[] { "1 cuota sin recargo", "3 cuotas +10%", "6 cuotas +20%." });
-            cboCuotas.Location = new Point(103, 103);
+            cboCuotas.Location = new Point(85, 107);
             cboCuotas.Margin = new Padding(4);
             cboCuotas.Name = "cboCuotas";
-            cboCuotas.Size = new Size(202, 28);
+            cboCuotas.Size = new Size(202, 25);
             cboCuotas.TabIndex = 10;
             // 
             // lblCuotas
@@ -235,7 +246,7 @@
             lblCuotas.Location = new Point(21, 107);
             lblCuotas.Margin = new Padding(4, 0, 4, 0);
             lblCuotas.Name = "lblCuotas";
-            lblCuotas.Size = new Size(78, 20);
+            lblCuotas.Size = new Size(56, 17);
             lblCuotas.TabIndex = 9;
             lblCuotas.Text = "Cuotas:";
             // 
@@ -245,9 +256,8 @@
             rbtTarjeta.Location = new Point(23, 69);
             rbtTarjeta.Margin = new Padding(4);
             rbtTarjeta.Name = "rbtTarjeta";
-            rbtTarjeta.Size = new Size(103, 24);
+            rbtTarjeta.Size = new Size(71, 21);
             rbtTarjeta.TabIndex = 7;
-            rbtTarjeta.TabStop = true;
             rbtTarjeta.Text = "Tarjeta";
             rbtTarjeta.UseVisualStyleBackColor = true;
             rbtTarjeta.CheckedChanged += rbtTarjeta_CheckedChanged_1;
@@ -255,19 +265,21 @@
             // rbtEfectivo
             // 
             rbtEfectivo.AutoSize = true;
+            rbtEfectivo.Checked = true;
             rbtEfectivo.Location = new Point(23, 36);
             rbtEfectivo.Margin = new Padding(4);
             rbtEfectivo.Name = "rbtEfectivo";
-            rbtEfectivo.Size = new Size(108, 24);
+            rbtEfectivo.Size = new Size(76, 21);
             rbtEfectivo.TabIndex = 6;
             rbtEfectivo.TabStop = true;
             rbtEfectivo.Text = "Efectivo";
             rbtEfectivo.UseVisualStyleBackColor = true;
+            rbtEfectivo.CheckedChanged += rbtEfectivo_CheckedChanged;
             // 
             // btnCalcular
             // 
             btnCalcular.BackColor = Color.Coral;
-            btnCalcular.Location = new Point(17, 653);
+            btnCalcular.Location = new Point(369, 514);
             btnCalcular.Margin = new Padding(4);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(144, 51);
@@ -279,7 +291,7 @@
             // btnLimpiar
             // 
             btnLimpiar.BackColor = Color.Coral;
-            btnLimpiar.Location = new Point(232, 653);
+            btnLimpiar.Location = new Point(521, 514);
             btnLimpiar.Margin = new Padding(4);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(146, 51);
@@ -291,9 +303,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(417, 12);
+            pictureBox1.Location = new Point(393, 134);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(181, 209);
+            pictureBox1.Size = new Size(236, 252);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -301,17 +313,17 @@
             // 
             // frmInscipción
             // 
-            AutoScaleDimensions = new SizeF(11F, 20F);
+            AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(610, 736);
+            ClientSize = new Size(678, 599);
             Controls.Add(pictureBox1);
             Controls.Add(btnLimpiar);
             Controls.Add(btnCalcular);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Font = new Font("Stencil", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Italic, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
@@ -352,5 +364,6 @@
         private Button btnLimpiar;
         private CheckBox chkCasillero;
         private PictureBox pictureBox1;
+        private Label label1;
     }
 }

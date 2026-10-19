@@ -180,6 +180,11 @@ namespace prySP2_3_Gimnasio_Pedraza
         private void btnCalcular_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCalcular_Click_1(object sender, EventArgs e)
+        {
+
             int edad = int.Parse(txtEdad.Text);
             int meses = int.Parse(txtMeses.Text);
 
@@ -195,7 +200,7 @@ namespace prySP2_3_Gimnasio_Pedraza
                 MessageBox.Show("La cantidad de meses debe estar entre 1 y 12.", "Error de Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
+               
 
             string planElegido = cboPlan.SelectedItem.ToString();
             decimal precioMensual = 0m;
@@ -323,19 +328,19 @@ namespace prySP2_3_Gimnasio_Pedraza
             EstadoInicial();
         }
 
-        private void btnCalcular_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void rbtTarjeta_CheckedChanged_1(object sender, EventArgs e)
         {
-
+            if (rbtTarjeta.Checked)
+            {
+                cboCuotas.Enabled = true;
+            }
         }
 
         private void btnLimpiar_Click_1(object sender, EventArgs e)
         {
-
+            {
+                EstadoInicial();
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -346,6 +351,11 @@ namespace prySP2_3_Gimnasio_Pedraza
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void rbtEfectivo_CheckedChanged(object sender, EventArgs e)
+        {
+            cboCuotas.Enabled = false;
         }
     }
 }
